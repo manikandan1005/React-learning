@@ -1,12 +1,30 @@
+import Crud from "./CRUD/Crud"
+import Readpage from "./CRUD/Readpage"
+import Editpage from "./CRUD/Editpage"
+import Add from "./CRUD/Add"
+
+
 import Table from "./List/Table"
-import Component2 from "./List/component2"
+
 import CakeList from "./MethodProps/CakeList"
 import PageNotFound from "./PageNotFound"
-import Props from "./props/Props"
+
 import { createBrowserRouter,RouterProvider } from "react-router-dom"
 
 const router=createBrowserRouter([
-  {path:'/',element:<Props/>,errorElement:<PageNotFound/>},
+  {
+    path:'/',element:<Crud/>,errorElement:<PageNotFound/>,
+    children:[
+      {
+        path:'',element:<Readpage/>
+    },
+    {
+        path:'edit',element:<Editpage/>
+    },
+    {
+        path:'add',element:<Add/>
+    }]
+  },
   {path:"/table",element:<Table/>},
   {path:'/method',element:<CakeList/>}
 ])
@@ -15,7 +33,7 @@ function App() {
  
   return (
     <>
-    <h1>hello</h1>
+    
     <RouterProvider router={router}/>
     </>
   )
