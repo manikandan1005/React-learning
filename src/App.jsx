@@ -1,12 +1,14 @@
 import Table from "./List/Table"
 import Component2 from "./List/component2"
+import CakeList from "./MethodProps/CakeList"
 import PageNotFound from "./PageNotFound"
 import Props from "./props/Props"
 import { createBrowserRouter,RouterProvider } from "react-router-dom"
 
 const router=createBrowserRouter([
   {path:'/',element:<Props/>,errorElement:<PageNotFound/>},
-  {path:"/table",element:<Table/>}
+  {path:"/table",element:<Table/>},
+  {path:'/method',element:<CakeList/>}
 ])
 
 function App() {

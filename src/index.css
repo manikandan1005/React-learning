@@ -22,3 +22,17 @@ form>div{
 input{
   padding: 5px 10px;
 }
+
+
+.cart{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    text-wrap:warp;
+    width:300px ;
+}
+
+img{
+    height: 200px;
+    width: 100%;
+}
