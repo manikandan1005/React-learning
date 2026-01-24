@@ -10,6 +10,7 @@ import CakeList from "./MethodProps/CakeList"
 import PageNotFound from "./PageNotFound"
 
 import { createBrowserRouter,RouterProvider } from "react-router-dom"
+import UseState from "./UseState/UseState"
 
 const router=createBrowserRouter([
   {
@@ -26,7 +27,8 @@ const router=createBrowserRouter([
     }]
   },
   {path:"/table",element:<Table/>},
-  {path:'/method',element:<CakeList/>}
+  {path:'/method',element:<CakeList/>},
+  {path:'/state',element:<UseState/>}
 ])
 
 function App() {
