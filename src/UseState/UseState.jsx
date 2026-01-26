@@ -9,7 +9,9 @@ function UseState(){
             .then((data)=>setList(data))
             .catch((err)=>{
                 console.log(err);
-                setList([]);
+                
+                setList([
+    {id: 1, course:'MEAN', name: 'Mani', city: 'Namakkal', tk: 'Tiruchengode', post: 'Vattur', age: 22, education: 'UG'}]);
             })
         },[])
 

@@ -35,7 +35,7 @@ function view(ID){
        
         <>
             <div className="flex my-4 justify-end gap-3">
-        <input type="text" value="hii" className="border border-black rounded" />
+        <input type="text"  className="border border-black rounded" />
         <Link to="/add" className="bg-red-500 px-3 mx-3 py-2 border-xl text-white">Add</Link>
     </div>
 
@@ -45,7 +45,7 @@ function view(ID){
             <thead>
                 <tr>
                     <th>Student ID</th>
-                    <th>NameD</th>
+                    <th>Name</th>
                     <th>Education</th>
                     <th>City</th>
                     <th>Joined course</th>
